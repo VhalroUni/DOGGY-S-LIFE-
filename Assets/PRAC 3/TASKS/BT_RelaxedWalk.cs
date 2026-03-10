@@ -41,16 +41,18 @@ public class BT_RelaxedWalk : BehaviourTree
           A behaviour tree can use other behaviour trees.  
       */
 
-        root = new DynamicSelector();
+        DynamicSelector relaxedWalk = new DynamicSelector();
 
-        root.AddChild(new CONDITION_isTimeOut());
+        relaxedWalk.AddChild(new CONDITION_isTimeOut(),
+              new Sequence(
+                  new ACTION_ChangePointOfIntereset(),
+                  new ACTION_ResetTimer()
+                  )
+        );
 
-        root = new Sequence();
+        relaxedWalk.AddChild(new CONDITION_AlwaysTrue(),
+            new ACTION_WanderAround("Attractor", "SeekWeight"));
 
-        root.AddChild(new ACTION_ChangePointOfIntereset());
-        root.AddChild(new ACTION_ResetTimer());
-
-
-        root.AddChild(new ACTION_WanderAround()); //Por hacer
+        root = new RepeatForeverDecorator(relaxedWalk);
     }
 }
