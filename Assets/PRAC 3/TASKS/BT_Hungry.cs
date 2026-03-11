@@ -54,6 +54,6 @@ public class BT_Hungry : BehaviourTree
             new BT_RelaxedWalk()
         );
 
-        root = hungry;
+        root = new RepeatForeverDecorator(hungry);
     }
 }

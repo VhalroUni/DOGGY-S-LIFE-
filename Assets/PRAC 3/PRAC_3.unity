@@ -3417,7 +3417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 53860486cf18188428b968e8fecc55f9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: Assembly-CSharp::BTs.BehaviourTreeExecutor
-  behaviourTree: {fileID: 11400000, guid: f5817304b490eff44b7c020fb48c3801, type: 2}
+  behaviourTree: {fileID: 11400000, guid: 41ffd94b27fb96f4ea1ad602f911c4bb, type: 2}
   status: LIMBO
 --- !u!114 &1449138960
 MonoBehaviour:
@@ -3523,8 +3523,6 @@ MonoBehaviour:
   housePrevious: {fileID: 0}
   houseEntrance: {fileID: 0}
   houseEnd: {fileID: 0}
-  Attractor: {fileID: 0}
-  SeekWeight: 0.22
   hunger: 0
   hungerIncrement: 0.5
   hungryThreshold: 100

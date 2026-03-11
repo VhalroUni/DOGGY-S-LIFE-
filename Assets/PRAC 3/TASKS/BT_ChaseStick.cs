@@ -40,14 +40,16 @@ public class BT_ChaseStick : BehaviourTree
           A behaviour tree can use other behaviour trees.  
       */
 
-        root = new Sequence();
+        Sequence stick = new Sequence();
 
-        root.AddChild(new ACTION_IncreaseSpeed());
-        root.AddChild(new ACTION_Arrive("theStick"));
-        root.AddChild(new ACTION_Take("theStick"));
-        root.AddChild(new ACTION_Arrive("stickAbandonArea"));
-        root.AddChild(new ACTION_Drop("theStick"));
-        root.AddChild(new ACTION_DecreaseSpeed());
-        root.AddChild(new ACTION_SetTag());
+        stick.AddChild(new ACTION_IncreaseSpeed());
+        stick.AddChild(new ACTION_Arrive("theStick"));
+        stick.AddChild(new ACTION_Take("theStick"));
+        stick.AddChild(new ACTION_Arrive("stickAbandonArea"));
+        stick.AddChild(new ACTION_Drop("theStick"));
+        stick.AddChild(new ACTION_DecreaseSpeed());
+        stick.AddChild(new ACTION_SetTag("theStick", "Untagged"));
+
+        root = stick;
     }
 }

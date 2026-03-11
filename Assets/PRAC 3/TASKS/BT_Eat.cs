@@ -56,14 +56,13 @@ public class BT_Eat : BehaviourTree
                     new ACTION_Arrive("FoodLocationOne"),
                     new CONDITION_InstanceNear("50", "FOOD"),
                     new ACTION_Eat()
-                    )
-                ),
+                    ),
                 new Sequence(
                     new ACTION_Arrive("FoodLocationTwo"),
                     new CONDITION_InstanceNear("50", "FOOD"),
                     new ACTION_Eat()
                     )
-            );
+            ));
 
         root = new RepeatUntilSuccessDecorator(sequence);
     }
