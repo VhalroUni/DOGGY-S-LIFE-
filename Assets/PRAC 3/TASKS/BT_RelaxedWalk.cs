@@ -51,7 +51,7 @@ public class BT_RelaxedWalk : BehaviourTree
         );
 
         relaxedWalk.AddChild(new CONDITION_AlwaysTrue(),
-            new ACTION_WanderAround("Attractor", "SeekWeight"));
+            new ACTION_WanderAround("currentPointOfInterest", "0.22"));
 
         root = new RepeatForeverDecorator(relaxedWalk);
     }

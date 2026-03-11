@@ -88,7 +88,6 @@ public class DynamicBlackboard : MonoBehaviour
     private T InnerGet<T> (string name)
     {
         object value = null;
-
         name = name.ToUpper();
         if (fields.ContainsKey(name)) // name refers to a field 
             value = fields[name].GetValue(this);

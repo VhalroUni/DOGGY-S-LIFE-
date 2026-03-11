@@ -17,9 +17,7 @@ public class DOGGY_Blackboard : DynamicBlackboard
     public GameObject housePrevious; // used by Hide
     public GameObject houseEntrance; // used by Hide
     public GameObject houseEnd; // used by Hide
-    public GameObject Attractor;
 
-    public float SeekWeight = 0.22f;
     public float hunger = 0;
     public float hungerIncrement = 0.5f;
     public float hungryThreshold = 100;
@@ -39,7 +37,6 @@ public class DOGGY_Blackboard : DynamicBlackboard
         sContext = GetComponent<SteeringContext>();
         
         centreOfScene = GameObject.Find("CentreOfScene");
-        Attractor = GameObject.Find("CentreOfScene");
         foodLocationOne = GameObject.Find("FlagSteak");
         foodLocationTwo = GameObject.Find("FlagKibble");
         
