@@ -61,23 +61,22 @@
     <Analyzer Include="C:\Program Files\Unity\Hub\Editor\6000.3.2f1\Editor\Data\Tools\BuildPipeline\Unity.SourceGenerators\Unity.UIToolkit.SourceGenerator.dll" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Assets\PRAC 3\TASKS\BT_ChaseStick.cs" />
     <Compile Include="Assets\AICourse\Steerings\Flocking.cs" />
     <Compile Include="Assets\PRAC 3\TASKS\ACTION_ChangePointOfIntereset.cs" />
     <Compile Include="Assets\AICourse\Steerings\GroupManager.cs" />
     <Compile Include="Assets\AICourse\BTs\PredefinedTasks\Actions\ACTION_LeaveAtByTag.cs" />
     <Compile Include="Assets\AICourse\BTs\Core\ParallelAnd.cs" />
+    <Compile Include="Assets\PRAC 3\BTs\BT_Eat.cs" />
     <Compile Include="Assets\AICourse\BTs\PredefinedTasks\Actions\ACTION_PlaySound.cs" />
     <Compile Include="Assets\AICourse\Utilities\StartStopController.cs" />
+    <Compile Include="Assets\PRAC 3\BTs\BT_RelaxedWalk.cs" />
     <Compile Include="Assets\AICourse\Utilities\SpeedUpDown.cs" />
     <Compile Include="Assets\AICourse\Steerings\GoWhereYouLook.cs" />
     <Compile Include="Assets\AICourse\BTs\Core\RepeatUntilFailureDecorator.cs" />
-    <Compile Include="Assets\PRAC 3\TASKS\BT_StickThrown.cs" />
     <Compile Include="Assets\AICourse\BTs\PredefinedTasks\Conditions\CONDITION_InstanceNear.cs" />
+    <Compile Include="Assets\PRAC 3\BTs\BT_StickThrown.cs" />
     <Compile Include="Assets\AICourse\BTs\PredefinedTasks\Actions\ACTION_SetTag.cs" />
-    <Compile Include="Assets\PRAC 3\TASKS\BT_Hungry.cs" />
     <Compile Include="Assets\AICourse\Utilities\DynamicBlackboard.cs" />
-    <Compile Include="Assets\PRAC 3\TASKS\BT_RelaxedWalk.cs" />
     <Compile Include="Assets\PRAC 3\TASKS\ACTION_DecreaseSpeed.cs" />
     <Compile Include="Assets\AICourse\Steerings\Align.cs" />
     <Compile Include="Assets\AICourse\BTs\PredefinedTasks\Actions\ACTION_Drop.cs" />
@@ -133,7 +132,6 @@
     <Compile Include="Assets\AICourse\Steerings\WanderAroundPlusAvoid.cs" />
     <Compile Include="Assets\AICourse\Steerings\FlockingPlusAvoidance.cs" />
     <Compile Include="Assets\AICourse\Utilities\RecallPosition.cs" />
-    <Compile Include="Assets\PRAC 3\TASKS\BT_Eat.cs" />
     <Compile Include="Assets\AICourse\Utilities\DebugExtension.cs" />
     <Compile Include="Assets\AICourse\BTs\Core\RandomSequence.cs" />
     <Compile Include="Assets\AICourse\BTs\Core\Node.cs" />
@@ -146,6 +144,7 @@
     <Compile Include="Assets\AICourse\Steerings\Arrive.cs" />
     <Compile Include="Assets\AICourse\Utilities\SensingUtils.cs" />
     <Compile Include="Assets\AICourse\Utilities\FieldToText.cs" />
+    <Compile Include="Assets\PRAC 3\BTs\BT_DogLife.cs" />
     <Compile Include="Assets\AICourse\BTs\PredefinedTasks\Conditions\CONDITION_ParentsObjectWithTag.cs" />
     <Compile Include="Assets\AICourse\BTs\PredefinedTasks\Actions\ACTION_WaitForSeconds.cs" />
     <Compile Include="Assets\AICourse\Steerings\Face.cs" />
@@ -164,12 +163,14 @@
     <Compile Include="Assets\AICourse\BTs\Core\BehaviourTree.cs" />
     <Compile Include="Assets\AICourse\Steerings\PursuePlusOA.cs" />
     <Compile Include="Assets\AICourse\Steerings\FlockingAround.cs" />
+    <Compile Include="Assets\PRAC 3\BTs\BT_ChaseStick.cs" />
     <Compile Include="Assets\AICourse\BTs\Core\Action.cs" />
     <Compile Include="Assets\AICourse\BTs\Core\RandomSelector.cs" />
     <Compile Include="Assets\AICourse\Steerings\FleePlusOA.cs" />
     <Compile Include="Assets\AICourse\Steerings\Seek.cs" />
     <Compile Include="Assets\AICourse\BTs\Core\RepeatUntilSuccessDecorator.cs" />
     <Compile Include="Assets\AICourse\Utilities\KBDRotate.cs" />
+    <Compile Include="Assets\PRAC 3\BTs\BT_Hungry.cs" />
     <Compile Include="Assets\AICourse\BTs\PredefinedTasks\Actions\ACTION_Activate.cs" />
     <Compile Include="Assets\AICourse\BTs\Core\Decorator.cs" />
     <Compile Include="Assets\AICourse\Utilities\AngSpeedListener.cs" />
